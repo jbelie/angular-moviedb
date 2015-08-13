@@ -1,0 +1,64 @@
+<div id="breadcrumb" class="custom-breadcrumb">
+	<div class="row">
+		<div class="col-sm-6 text-left">
+			<a href="#/">Home</a>
+			<span class="italic">&gt;&nbsp;{{movie.title}}</span>
+		</div>
+		<div id="breadcrumb-back" class="col-sm-6 text-right">
+			<a href='' ng-click="back()" class="">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				Back to movies
+			</a>
+		</div>
+	</div>
+</div>
+
+<div id="movie-details" loading="loading">
+	<div class="movie">
+		<div class="row">
+			<div class="col-xs-8  col-sm-4">
+				<img ng-src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}"/>
+				
+			</div>
+			<div id="movie-overview" class="col-xs-12 col-sm-8">
+					<h2>{{movie.title}}</h2>
+					<div class="row movie-row">
+						<div class="col-xs-2">
+							<span class="bold">Genre</span>
+						</div>
+						<div class="col-xs-10">
+							<ul>
+								<li ng-repeat="genre in movie.genres">{{genre.name}}</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row movie-row">
+						<div class="col-xs-2">
+							<span class="bold">Storyline</span>
+						</div>
+						<div class="col-xs-10">
+							{{movie.overview}}
+						</div>
+					</div>					
+					<div class="row movie-row">
+						<div class="col-xs-2">
+							<span class="bold">Country</span>
+						</div>
+						<div class="col-xs-10">
+							<ul>
+								<li ng-repeat="production in movie.production_countries">{{production.name}}</li>
+							</ul>							
+						</div>
+					</div>					
+					<div class="row movie-row">
+						<div class="col-xs-2">
+							<span class="bold">Date</span>
+						</div>
+						<div class="col-xs-10">
+							{{movie.release_date | date: 'yyyy'}}
+						</div>
+					</div>					
+			</div>
+		</div><!--row-->
+	</div><!--.movie-->
+</div><!--#movie-detail-->

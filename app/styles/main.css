@@ -1,0 +1,306 @@
+/**
+ * YEOMAN
+ */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 800px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+/**
+ * END - YEOMAN
+ */
+
+/*
+ * CUSTOM CSS
+ */
+body{
+	background-color:#E4E4E4;
+	font-family:arial,sans-serif;
+	font-size:14px;
+	color:#333;
+}
+
+
+ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+a:hover{
+	text-decoration:none;
+}
+.bold{
+	font-weight:bold;
+}
+.italic{
+	font-style:italic;
+}
+.little{
+	font-size:14px;
+}
+.light-gray{
+	color:#EEE;
+}
+.light-black{
+	color:#666;
+}
+.red{
+	color:red;
+}
+.light-red{
+	color:#D8838D;
+}
+.green{
+	color:#5FEF37;
+}
+.col-no-spaces{
+	padding-left:0px;
+	padding-right:0px;
+}
+/* App */
+#app{
+    box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.75);
+    margin: 20px auto 20px;
+    max-width: 1000px;
+    background-color:#FFF;
+}
+
+#app-content{
+	padding:20px;
+}
+
+/* Content */
+
+.button{
+	background-color:#f46547;
+	height:34px;
+	line-height:34px;
+	font-size:12px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:center;
+	color:#FFF;
+	border:0px solid #FFF;
+	padding:0 20px;
+	margin:10px 0;
+	display:inline-block;
+}
+.button:hover{
+	background-color:#F47358;
+	color:#EEE;
+}
+.button span{
+	margin-right:5px;
+}
+
+ul.two-colors-list li.odd{
+	background-color:#FFF;
+}
+ul.two-colors-list li.even{
+	background-color:#F7F7F7;
+}
+ul.two-colors-list-hover li.odd:hover{
+	background-color:#E7E7E7;
+}
+ul.two-colors-list-hover li.even:hover{
+	background-color:#EEE;
+}
+
+
+
+/* Header */
+#header{
+	color:#FFF;
+	text-align:center;
+	background-color:#52CEB7;
+}
+#header h1{
+	font-weight:bold;
+	padding:10px 0;
+	margin:0;
+}
+#header a{
+	color:#FFF;
+}
+
+#search-bar{
+	background-color:#74d9c7;
+	padding:35px 0;
+}
+
+/* Footer */
+#footer{
+    background-color: #ccc;
+    color: #888;
+    font-size: 12px;
+    padding: 10px 10px;
+    margin:20px 0 0 0;
+}
+#footer p{
+	margin:0px;
+}
+
+/* Breadcrumb */
+.custom-breadcrumb{
+	margin:15px 0;
+	padding:0 0 10px 0;
+	color:#444;
+	font-size:12px;
+	border-bottom:1px solid #CCC;
+}
+.custom-breadcrumb a,.custom-breadcrumb span{
+	color:#999;
+}
+.custom-breadcrumb a .glyphicon{
+	color:#444;
+}
+.custom-breadcrumb a.first-child{
+	border-right:1px solid #AAA;
+}
+
+#breadcrumb-list{}
+#breadcrumb-list .filter-title{
+	text-transform:uppercase;
+}
+#breadcrumb-filter a{
+	padding:0 8px 5px 8px;
+}
+
+/* Movie list */
+#movies{}
+#movies-list{
+	position:relative;
+}
+.loading-container{
+	padding:50px 0;
+}
+.movie{
+	color:#777;
+	margin:0 0 15px 0;
+	padding:0 0 15px 0;
+	border-bottom:1px dashed #CCC;
+}
+.movie h2, .movie h4{
+	margin:0 0 10px 0;
+	color:#555;
+	font-weight:bold;
+	font-size:20px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+.movie h2{
+	font-size:22px;
+}
+.movie h4{
+	font-size:16px;
+}
+.movie img{
+	width:100%;
+	height:auto;
+}
+
+#no-movies{
+	font-size:20px;
+	color:#AAA;
+	padding:15px 0;
+}
+
+#pagination{
+	text-align:center;
+}
+
+
+/* Movie Details */
+#movie-details{}
+#movie-details #movie-overview .movie-row{
+	margin:0 0 8px 0;
+}
+
+
+@media (max-width: 768px) {
+	#breadcrumb-filter,#breadcrumb-back{
+		text-align:left;
+		margin:10px 0 0 0 ;
+	}
+	.movie img{
+		margin-bottom:20px;
+	}
+}

@@ -1,0 +1,25 @@
+<li class="movie" ng-repeat="movie in movies | orderBy: orderByPredicate : orderByReverse">
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0  col-md-3">
+			<img ng-src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}" ng-hide="!movie.poster_path" />
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-9">
+			<a href="#/details/{{movie.id}}"><h4 ng-bind="movie.title"></h4></a>
+			<div class="row">
+				<label class="col-xs-2 text-left">Year:</label>
+				<span class="col-xs-10" ng-bind="movie.release_date | date:'yyyy'"></span>
+			</div>
+			<div class="row">
+				<label class="col-xs-2 text-left">Rating:</label>
+				<div class="col-xs-10">
+					<rating class="col-sd-6" ng-model="movie.vote_average" max="10" readonly="true"></rating>
+					(<span ng-bind="movie.vote_count"></span>&nbspavis)
+				</div>
+			</div>
+			<a href="#/details/{{movie.id}}" class="button">
+				<span class="glyphicon glyphicon-plus"></span>
+				More
+			</a>
+		</div>
+	</div>
+</li>
