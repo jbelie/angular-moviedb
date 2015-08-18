@@ -19,15 +19,13 @@ angular.module('angularMoviedbApp')
         $scope.loadMovies = function(){
             $scope.loading = true;
 
-			setTimeout(function(){
-				movieProvider.popular($scope.currentPage).success(function(data){
-					$scope.movies = data.results;
-					$scope.totalPages = data.total_pages;
-					$scope.loading = false;
-				}).error(function(response){
-					alert(response.status_message);
-				});
-			},5000);
+			movieProvider.popular($scope.currentPage).success(function(data){
+				$scope.movies = data.results;
+				$scope.totalPages = data.total_pages;
+				$scope.loading = false;
+			}).error(function(response){
+				alert(response.status_message);
+			});
         };
 
         $scope.pageChanged = function(){
