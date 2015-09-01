@@ -12,4 +12,4 @@ Run `grunt` for building and `grunt serve` for preview.
 Running `grunt test` will run the unit tests with karma.
 
 ## Demo
-[http://jbelie.github.io/angular-moviedb](http://jbelie.github.io/angular-moviedb "Angular MovieDB")
+<a href="http://jbelie.github.io/angular-moviedb" target="_blank">jbelie.github.io/angular-moviedb</a>
